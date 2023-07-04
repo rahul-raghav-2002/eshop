@@ -1,0 +1,19 @@
+2023-06-19T14:15:56+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Error::get_data() in /opt/lampp/htdocs/wordpress/wp-content/themes/woostify/inc/class-woostify.php:1194
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress/wp-includes/class-wp-hook.php(308): Woostify->{closure}(Object(WP_Error), Array, Object(WP_REST_Request))
+#1 /opt/lampp/htdocs/wordpress/wp-includes/plugin.php(205): WP_Hook->apply_filters(Object(WP_Error), Array)
+#2 /opt/lampp/htdocs/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1206): apply_filters('rest_request_af...', Object(WP_Error), Array, Object(WP_REST_Request))
+#3 /opt/lampp/htdocs/wordpress/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/elementor/v1/g...', Array, Object(WP_Error))
+#4 /opt/lampp/htdocs/wordpress/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 /opt/lampp/htdocs/wordpress/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/elementor/v1/g...')
+#6 /opt/lampp/htdocs/wordpress/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#7 /opt/lampp/htdocs/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 /opt/lampp/htdocs/wordpress/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#10 /opt/lampp/htdocs/wordpress/wp-includes/class-wp.php(780): WP->parse_request('')
+#11 /opt/lampp/htdocs/wordpress/wp-includes/functions.php(1334): WP->main('')
+#12 /opt/lampp/htdocs/wordpress/wp-blog-header.php(16): wp()
+#13 /opt/lampp/htdocs/wordpress/index.php(17): require('/opt/lampp/htdo...')
+#14 {main}
+  thrown in /opt/lampp/htdocs/wordpress/wp-content/themes/woostify/inc/class-woostify.php on line 1194
+
